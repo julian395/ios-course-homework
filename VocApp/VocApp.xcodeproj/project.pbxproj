@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FB2C5AF1CAD5DF200C77DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2C5AE1CAD5DF200C77DDD /* AppDelegate.swift */; };
+		7FB2C5B11CAD5DF200C77DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2C5B01CAD5DF200C77DDD /* ViewController.swift */; };
+		7FB2C5B41CAD5DF200C77DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB2C5B21CAD5DF200C77DDD /* Main.storyboard */; };
+		7FB2C5B61CAD5DF200C77DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB2C5B51CAD5DF200C77DDD /* Assets.xcassets */; };
+		7FB2C5B91CAD5DF200C77DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB2C5B71CAD5DF200C77DDD /* LaunchScreen.storyboard */; };
+		7FB2C5C41CAD5DF200C77DDD /* VocAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2C5C31CAD5DF200C77DDD /* VocAppTests.swift */; };
+		7FB2C5CF1CAD5DF200C77DDD /* VocAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2C5CE1CAD5DF200C77DDD /* VocAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FB2C5C01CAD5DF200C77DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB2C5A31CAD5DF200C77DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB2C5AA1CAD5DF200C77DDD;
+			remoteInfo = VocApp;
+		};
+		7FB2C5CB1CAD5DF200C77DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB2C5A31CAD5DF200C77DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB2C5AA1CAD5DF200C77DDD;
+			remoteInfo = VocApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FB2C5AB1CAD5DF200C77DDD /* VocApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB2C5AE1CAD5DF200C77DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FB2C5B01CAD5DF200C77DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FB2C5B31CAD5DF200C77DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FB2C5B51CAD5DF200C77DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FB2C5B81CAD5DF200C77DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FB2C5BA1CAD5DF200C77DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB2C5BF1CAD5DF200C77DDD /* VocAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB2C5C31CAD5DF200C77DDD /* VocAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocAppTests.swift; sourceTree = "<group>"; };
+		7FB2C5C51CAD5DF200C77DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB2C5CA1CAD5DF200C77DDD /* VocAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB2C5CE1CAD5DF200C77DDD /* VocAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocAppUITests.swift; sourceTree = "<group>"; };
+		7FB2C5D01CAD5DF200C77DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FB2C5A81CAD5DF200C77DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5BC1CAD5DF200C77DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5C71CAD5DF200C77DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FB2C5A21CAD5DF200C77DDD = {
+			isa = PBXGroup;
+			children = (
+				7FB2C5AD1CAD5DF200C77DDD /* VocApp */,
+				7FB2C5C21CAD5DF200C77DDD /* VocAppTests */,
+				7FB2C5CD1CAD5DF200C77DDD /* VocAppUITests */,
+				7FB2C5AC1CAD5DF200C77DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FB2C5AC1CAD5DF200C77DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB2C5AB1CAD5DF200C77DDD /* VocApp.app */,
+				7FB2C5BF1CAD5DF200C77DDD /* VocAppTests.xctest */,
+				7FB2C5CA1CAD5DF200C77DDD /* VocAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB2C5AD1CAD5DF200C77DDD /* VocApp */ = {
+			isa = PBXGroup;
+			children = (
+				7FB2C5AE1CAD5DF200C77DDD /* AppDelegate.swift */,
+				7FB2C5B01CAD5DF200C77DDD /* ViewController.swift */,
+				7FB2C5B21CAD5DF200C77DDD /* Main.storyboard */,
+				7FB2C5B51CAD5DF200C77DDD /* Assets.xcassets */,
+				7FB2C5B71CAD5DF200C77DDD /* LaunchScreen.storyboard */,
+				7FB2C5BA1CAD5DF200C77DDD /* Info.plist */,
+			);
+			path = VocApp;
+			sourceTree = "<group>";
+		};
+		7FB2C5C21CAD5DF200C77DDD /* VocAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB2C5C31CAD5DF200C77DDD /* VocAppTests.swift */,
+				7FB2C5C51CAD5DF200C77DDD /* Info.plist */,
+			);
+			path = VocAppTests;
+			sourceTree = "<group>";
+		};
+		7FB2C5CD1CAD5DF200C77DDD /* VocAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB2C5CE1CAD5DF200C77DDD /* VocAppUITests.swift */,
+				7FB2C5D01CAD5DF200C77DDD /* Info.plist */,
+			);
+			path = VocAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FB2C5AA1CAD5DF200C77DDD /* VocApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB2C5D31CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocApp" */;
+			buildPhases = (
+				7FB2C5A71CAD5DF200C77DDD /* Sources */,
+				7FB2C5A81CAD5DF200C77DDD /* Frameworks */,
+				7FB2C5A91CAD5DF200C77DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VocApp;
+			productName = VocApp;
+			productReference = 7FB2C5AB1CAD5DF200C77DDD /* VocApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FB2C5BE1CAD5DF200C77DDD /* VocAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB2C5D61CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocAppTests" */;
+			buildPhases = (
+				7FB2C5BB1CAD5DF200C77DDD /* Sources */,
+				7FB2C5BC1CAD5DF200C77DDD /* Frameworks */,
+				7FB2C5BD1CAD5DF200C77DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB2C5C11CAD5DF200C77DDD /* PBXTargetDependency */,
+			);
+			name = VocAppTests;
+			productName = VocAppTests;
+			productReference = 7FB2C5BF1CAD5DF200C77DDD /* VocAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FB2C5C91CAD5DF200C77DDD /* VocAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB2C5D91CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocAppUITests" */;
+			buildPhases = (
+				7FB2C5C61CAD5DF200C77DDD /* Sources */,
+				7FB2C5C71CAD5DF200C77DDD /* Frameworks */,
+				7FB2C5C81CAD5DF200C77DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB2C5CC1CAD5DF200C77DDD /* PBXTargetDependency */,
+			);
+			name = VocAppUITests;
+			productName = VocAppUITests;
+			productReference = 7FB2C5CA1CAD5DF200C77DDD /* VocAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FB2C5A31CAD5DF200C77DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = juliankob.com;
+				TargetAttributes = {
+					7FB2C5AA1CAD5DF200C77DDD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7FB2C5BE1CAD5DF200C77DDD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7FB2C5AA1CAD5DF200C77DDD;
+					};
+					7FB2C5C91CAD5DF200C77DDD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7FB2C5AA1CAD5DF200C77DDD;
+					};
+				};
+			};
+			buildConfigurationList = 7FB2C5A61CAD5DF200C77DDD /* Build configuration list for PBXProject "VocApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FB2C5A21CAD5DF200C77DDD;
+			productRefGroup = 7FB2C5AC1CAD5DF200C77DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FB2C5AA1CAD5DF200C77DDD /* VocApp */,
+				7FB2C5BE1CAD5DF200C77DDD /* VocAppTests */,
+				7FB2C5C91CAD5DF200C77DDD /* VocAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FB2C5A91CAD5DF200C77DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB2C5B91CAD5DF200C77DDD /* LaunchScreen.storyboard in Resources */,
+				7FB2C5B61CAD5DF200C77DDD /* Assets.xcassets in Resources */,
+				7FB2C5B41CAD5DF200C77DDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5BD1CAD5DF200C77DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5C81CAD5DF200C77DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FB2C5A71CAD5DF200C77DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB2C5B11CAD5DF200C77DDD /* ViewController.swift in Sources */,
+				7FB2C5AF1CAD5DF200C77DDD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5BB1CAD5DF200C77DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB2C5C41CAD5DF200C77DDD /* VocAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB2C5C61CAD5DF200C77DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB2C5CF1CAD5DF200C77DDD /* VocAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FB2C5C11CAD5DF200C77DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB2C5AA1CAD5DF200C77DDD /* VocApp */;
+			targetProxy = 7FB2C5C01CAD5DF200C77DDD /* PBXContainerItemProxy */;
+		};
+		7FB2C5CC1CAD5DF200C77DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB2C5AA1CAD5DF200C77DDD /* VocApp */;
+			targetProxy = 7FB2C5CB1CAD5DF200C77DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FB2C5B21CAD5DF200C77DDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB2C5B31CAD5DF200C77DDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FB2C5B71CAD5DF200C77DDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB2C5B81CAD5DF200C77DDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FB2C5D11CAD5DF200C77DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FB2C5D21CAD5DF200C77DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FB2C5D41CAD5DF200C77DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VocApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7FB2C5D51CAD5DF200C77DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VocApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7FB2C5D71CAD5DF200C77DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VocAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocApp.app/VocApp";
+			};
+			name = Debug;
+		};
+		7FB2C5D81CAD5DF200C77DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VocAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocApp.app/VocApp";
+			};
+			name = Release;
+		};
+		7FB2C5DA1CAD5DF200C77DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VocAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VocApp;
+			};
+			name = Debug;
+		};
+		7FB2C5DB1CAD5DF200C77DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VocAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliankob.VocAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VocApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FB2C5A61CAD5DF200C77DDD /* Build configuration list for PBXProject "VocApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB2C5D11CAD5DF200C77DDD /* Debug */,
+				7FB2C5D21CAD5DF200C77DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB2C5D31CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB2C5D41CAD5DF200C77DDD /* Debug */,
+				7FB2C5D51CAD5DF200C77DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FB2C5D61CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB2C5D71CAD5DF200C77DDD /* Debug */,
+				7FB2C5D81CAD5DF200C77DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FB2C5D91CAD5DF200C77DDD /* Build configuration list for PBXNativeTarget "VocAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB2C5DA1CAD5DF200C77DDD /* Debug */,
+				7FB2C5DB1CAD5DF200C77DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FB2C5A31CAD5DF200C77DDD /* Project object */;
+}
