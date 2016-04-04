@@ -1,5 +1,3 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 
 class Vocabulary
@@ -16,7 +14,7 @@ class Vocabulary
         {
             for tags in tag
             {
-            tagString = tagString + "[" + tags + "]" + " "
+                tagString = tagString + "[" + tags + "]" + " "
             }
         }
         if(!name.isEmpty)
@@ -39,6 +37,7 @@ v1.name = "Name one"
 v1.text = "Text one"
 v1.tag = ["first tag", "second tag", "third tag"]
 v1.fullDescription()
+
 
 
 var v2 = Vocabulary()
@@ -70,7 +69,7 @@ if(currentTime - TimeOfMsg > 86400)  //86400 - кількість секунд �
 }
 else
 {
-    print(NSDate()) //виведе 
+    print(NSDate()) //виведе
 }
 ///////////////
 
@@ -78,5 +77,3 @@ else
 var array = [v1,v2,v3,v4]
 array.sort({$0.date.timeIntervalSince1970 < $1.date.timeIntervalSince1970})
 ////////////////
-
-
