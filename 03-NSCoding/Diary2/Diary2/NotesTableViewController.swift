@@ -19,7 +19,6 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         if let savedNotes = loadNotes() {
         notes = notes + savedNotes
         }
@@ -27,6 +26,11 @@ class NotesTableViewController: UITableViewController {
         {
         hardCoded()
         }
+        if notes.isEmpty
+        {
+            hardCoded()
+        }
+
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(NotesTableViewController.addNote(_:)))
         self.navigationItem.rightBarButtonItem = addButton
     }
