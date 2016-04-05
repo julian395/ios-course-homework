@@ -33,4 +33,16 @@ class Diary2Tests: XCTestCase {
         }
     }
     
+    func testDiaryInitialization() {
+        // Success case.
+        let newItem = Diary(title: "It's my title", text: "It'm my text", img: "2")
+        XCTAssertNotNil(newItem)
+        // Failure cases.
+        let noTitle = Diary(title: "", text:"Everything fine", img: "0")
+        XCTAssertNil(noTitle, "Empty title is invalid")
+        
+        let noText = Diary(title: "Really bad day", text:"", img: "1")
+        XCTAssertNil(noText)
+    }
+    
 }

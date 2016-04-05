@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FB12BD71CB3EC8E002E9BEB /* MyDiaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB12BD61CB3EC8E002E9BEB /* MyDiaryTest.swift */; };
 		7FB2C6711CAFF06C00C77DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2C6701CAFF06C00C77DDD /* AppDelegate.swift */; };
 		7FB2C6761CAFF06C00C77DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB2C6741CAFF06C00C77DDD /* Main.storyboard */; };
 		7FB2C6781CAFF06C00C77DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB2C6771CAFF06C00C77DDD /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FB12BD61CB3EC8E002E9BEB /* MyDiaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDiaryTest.swift; sourceTree = "<group>"; };
 		7FB2C66D1CAFF06C00C77DDD /* Diary2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB2C6701CAFF06C00C77DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB2C6751CAFF06C00C77DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			children = (
 				7FB2C6851CAFF06C00C77DDD /* Diary2Tests.swift */,
 				7FB2C6871CAFF06C00C77DDD /* Info.plist */,
-				7FB12BD61CB3EC8E002E9BEB /* MyDiaryTest.swift */,
 			);
 			path = Diary2Tests;
 			sourceTree = "<group>";
@@ -281,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB2C6861CAFF06C00C77DDD /* Diary2Tests.swift in Sources */,
-				7FB12BD71CB3EC8E002E9BEB /* MyDiaryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

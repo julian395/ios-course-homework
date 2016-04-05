@@ -41,12 +41,17 @@ class Diary: NSObject, NSCoding {
 
 
     
-    init (title: String, text: String, img: String)
+    init?(title: String, text: String, img: String)
     {
         self.title = title
         self.text = text
         self.img = img
         
         super.init()
+        
+        if title.isEmpty || text.isEmpty
+        {
+        return nil
+        }
     }
 }

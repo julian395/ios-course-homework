@@ -37,15 +37,15 @@ class NotesTableViewController: UITableViewController {
 
     func hardCoded()
     {
-        notes.append(Diary(title:"It's great", text:"Today was a beautiful day!", img: "0" ))
-        notes.append(Diary(title:"I'm layzee", text:"It's very hard to study", img: "1"))
-        notes.append(Diary(title:"Want sleep", text:"I'm go to bad", img: "2"))
-        notes.append(Diary(title:"Wonderful day!", text:"Find some money", img: "3"))
+        notes.append(Diary(title:"It's great", text:"Today was a beautiful day!", img: "0" )!)
+        notes.append(Diary(title:"I'm layzee", text:"It's very hard to study", img: "1")!)
+        notes.append(Diary(title:"Want sleep", text:"I'm go to bad", img: "2")!)
+        notes.append(Diary(title:"Wonderful day!", text:"Find some money", img: "3")!)
     }
 
     
     func addNote(sender: AnyObject) {
-        notes.insert(Diary(title: "Tap to write title", text: "Empty", img: "0"), atIndex: 0)
+        notes.insert(Diary(title: "Tap to write title", text: "Empty", img: "0")!, atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         saveNotes()
