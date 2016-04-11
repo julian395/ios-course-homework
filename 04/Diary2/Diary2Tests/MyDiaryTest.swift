@@ -1,15 +1,14 @@
 //
-//  Diary2Tests.swift
-//  Diary2Tests
+//  MyDiaryTest.swift
+//  Diary2
 //
-//  Created by Julian1 on 02.04.16.
+//  Created by Julian1 on 05.04.16.
 //  Copyright © 2016 juliankob.com. All rights reserved.
 //
 
 import XCTest
-@testable import Diary2
 
-class Diary2Tests: XCTestCase {
+class MyDiaryTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -31,17 +30,6 @@ class Diary2Tests: XCTestCase {
         self.measureBlock {
             // Put the code you want to measure the time of here.
         }
-    }
-    
-    func testDiaryInitialization() {
-        // Success case.
-        let newItem = Diary(title: "It's my title", text: "It'm my text", img: "2")
-        XCTAssertNotNil(newItem)
-        // Failure cases.
-        let noTitle = Diary(title: "", text:"Everything fine", img: "0")
-        XCTAssertNil(noTitle, "Empty title is invalid")
-        let noText = Diary(title: "Really bad day", text:"", img: "1")
-        XCTAssertNil(noText)
     }
     
 }

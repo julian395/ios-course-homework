@@ -9,35 +9,47 @@
         <scene sceneID="zZp-o9-8xh">
             <objects>
                 <tableViewController id="lxd-YR-m9k" customClass="NotesTableViewController" customModule="Diary2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jrM-X6-fhm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="jrM-X6-fhm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="59s-js-d5n" detailTextLabel="Hf2-Vd-aOr" style="IBUITableViewCellStyleSubtitle" id="Zmr-wd-jAI">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="72" id="Zmr-wd-jAI" customClass="SectionTableViewCell" customModule="Diary2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zmr-wd-jAI" id="Lle-ty-I49">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="59s-js-d5n">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyl-Zf-kMq">
+                                            <rect key="frame" x="304" y="42" width="30" height="28"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB9-7Z-6Kc">
+                                            <rect key="frame" x="13" y="8" width="188" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hf2-Vd-aOr">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22E-EF-khE">
+                                            <rect key="frame" x="13" y="42" width="188" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-ho-3Ft">
+                                            <rect key="frame" x="232" y="8" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="notateDate" destination="OyU-ho-3Ft" id="wrY-S2-Nu9"/>
+                                    <outlet property="notateImg" destination="eyl-Zf-kMq" id="IdB-qg-h4R"/>
+                                    <outlet property="notateText" destination="22E-EF-khE" id="nvp-hM-D8F"/>
+                                    <outlet property="notateTitle" destination="mB9-7Z-6Kc" id="8mE-1w-VwI"/>
                                     <segue destination="gBj-pj-6No" kind="show" identifier="showDetail" id="cH9-pl-GZ1"/>
                                 </connections>
                             </tableViewCell>
@@ -123,40 +135,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDD-Bm-Wth">
-                                <rect key="frame" x="104" y="161" width="243" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="207" y="161" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Empty text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-G1-gWu">
-                                <rect key="frame" x="104" y="208" width="243" height="165"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="0.46853193496401424" blue="0.32110512502426192" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-O4-JoS">
-                                <rect key="frame" x="20" y="165" width="42" height="21"/>
+                                <rect key="frame" x="30" y="165" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.19329383680000001" blue="0.2413069903" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9N-iw-h1c">
                                 <rect key="frame" x="18" y="72" width="67" height="76"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7z-Fd-zc6">
-                                <rect key="frame" x="48" y="536" width="46" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="207" y="105" width="48" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
-                                <state key="normal" image="cloudy_sm">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
+                                <state key="normal" image="cloudy_sm"/>
                                 <connections>
                                     <action selector="cloudBut:" destination="gBj-pj-6No" eventType="touchUpInside" id="t4A-xc-Ymf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EK1-gC-U0i">
-                                <rect key="frame" x="166" y="536" width="47" height="36"/>
-                                <color key="backgroundColor" red="0.93538046479205617" green="0.94222577126087326" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="254" y="105" width="47" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
                                 <state key="normal" image="rain_sm">
                                     <attributedString key="attributedTitle"/>
@@ -165,9 +168,16 @@
                                     <action selector="rainBut:" destination="gBj-pj-6No" eventType="touchUpInside" id="FXV-7Q-iAF"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Empty text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-G1-gWu">
+                                <rect key="frame" x="135" y="208" width="212" height="165"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="center" semanticContentAttribute="spatial" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-O4-Q0f">
-                                <rect key="frame" x="281" y="536" width="46" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.93377900174702411" blue="0.44469238302427105" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="301" y="105" width="46" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
                                 <state key="normal" image="sunny_sm">
                                     <attributedString key="attributedTitle"/>
@@ -176,12 +186,13 @@
                                     <action selector="sunBut:" destination="gBj-pj-6No" eventType="touchUpInside" id="zdi-2C-Cqa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set the weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g38-hI-bhI">
-                                <rect key="frame" x="20" y="480" width="142" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yr-s7-2Gb">
+                                <rect key="frame" x="36" y="208" width="30" height="25"/>
+                                <state key="normal" image="calendar"/>
+                                <connections>
+                                    <segue destination="Q1V-Y6-1qQ" kind="modal" id="BtJ-Ha-RG7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -194,7 +205,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pi-g8-q2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79.5" y="-112.5"/>
+            <point key="canvasLocation" x="140.5" y="-124.5"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="rTX-BW-Fxp">
+            <objects>
+                <viewController id="Q1V-Y6-1qQ" customClass="ModalViewController" customModule="Diary2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TjL-W5-KrZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRq-f1-Xad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BvX-Hn-W6I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLQ-2f-mf6">
+                                <rect key="frame" x="98" y="489" width="178" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveAndClose:" destination="Q1V-Y6-1qQ" eventType="touchUpInside" id="e2J-ld-TMh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eR-1S-wUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388.5" y="330.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hBh-fJ-NV9">
@@ -217,6 +259,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" width="24" height="25"/>
         <image name="cloudy_sm" width="25" height="25"/>
         <image name="rain_sm" width="25" height="25"/>
         <image name="settings" width="38" height="39"/>

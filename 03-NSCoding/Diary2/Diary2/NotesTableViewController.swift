@@ -10,12 +10,11 @@ import UIKit
 
 class NotesTableViewController: UITableViewController {
 
-    @IBAction func SetBut(sender: AnyObject) {
-    }
-    
     var notes = [Diary]()
     static var dateType = true
  
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,37 +36,25 @@ class NotesTableViewController: UITableViewController {
 
     func hardCoded()
     {
-        notes.append(Diary(title:"It's great", text:"Today was a beautiful day!", img: "0" )!)
-        notes.append(Diary(title:"I'm layzee", text:"It's very hard to study", img: "1")!)
-        notes.append(Diary(title:"Want sleep", text:"I'm go to bad", img: "2")!)
-        notes.append(Diary(title:"Wonderful day!", text:"Find some money", img: "3")!)
+        let d1 = NSDate(timeIntervalSinceNow: -3600*24) // yesterday, should be shown as yesterday
+        let d2 = NSDate(timeIntervalSinceNow: -3600*48) // 2 days ago, should be shown as day of week
+        let d3 = NSDate(timeIntervalSinceNow: -3600*24*10) // 10 days ago, should be shown as date
+        let d4 = NSDate(timeIntervalSinceNow: -3580) // 10 days ago, should be shown as date
+        notes.append(Diary(date : d1,title:"It's great", text:"Today was a beautiful day!", img: .Default )!)
+        notes.append(Diary(date : d2,title:"I'm layzee", text:"It's very hard to study", img: .Rain)!)
+        notes.append(Diary(date : d3,title:"Want sleep", text:"I'm go to bad", img: .Sun)!)
+        notes.append(Diary(date : d4,title:"Wonderful day!", text:"Find some money", img: .Cloud)!)
     }
 
     
     func addNote(sender: AnyObject) {
-        notes.insert(Diary(title: "Tap to write title", text: "Empty", img: "0")!, atIndex: 0)
+        notes.insert(Diary(date: NSDate(),title: "Tap to write title", text: "Empty", img: .Default)!, atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         saveNotes()
     }
     
-    func converDate (date: NSDate) -> String {
-        let formatterDate = NSDateFormatter()
-        formatterDate.dateStyle = .LongStyle
-        if NotesTableViewController.dateType == true
-        {
-            formatterDate.timeStyle = .ShortStyle
-        }
-        else if NotesTableViewController.dateType == false
-        {
-            formatterDate.dateStyle = .ShortStyle
-            formatterDate.timeStyle = .NoStyle
-        }
-        return formatterDate.stringFromDate(date)
-    }
-   
-
-    override func didReceiveMemoryWarning() {
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -89,30 +76,23 @@ class NotesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    
      let notate = notes[indexPath.row]
      let cellId = "Cell"
      let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
-     cell.textLabel?.text = converDate(notate.date)
+     cell.textLabel?.text = notate.date.formattedRelativeString()
      cell.detailTextLabel?.text = notate.text
-        if notate.img == "0"
+        switch notate.img
         {
-        cell.imageView?.image = UIImage(named: "default")
-        }
-        if notate.img == "1"
-        {
+        case .Default :
+            cell.imageView?.image = UIImage(named: "default")
+        case .Rain :
             cell.imageView?.image = UIImage(named: "rain_sm")
-        }
-        if notate.img == "2"
-        {
+        case .Sun :
             cell.imageView?.image = UIImage(named: "sunny_sm")
-        }
-        if notate.img == "3"
-        {
+        case .Cloud :
             cell.imageView?.image = UIImage(named: "cloudy_sm")
         }
-        saveNotes()
-        return cell
+               return cell
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -129,7 +109,7 @@ class NotesTableViewController: UITableViewController {
             {
                 var notate = notes[indexPath.row]
                 let destinationController = segue.destinationViewController as! DeatilViewController
-                destinationController.dateTXT = converDate(notate.date)
+                destinationController.dateTXT = notate.date.formattedRelativeString()
                 destinationController.notes = notate
                 destinationController.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -137,7 +117,7 @@ class NotesTableViewController: UITableViewController {
     }
     
     //MARK : NSCoding
-    
+   
     func saveNotes() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(notes, toFile: Diary.ArchiveURL.path!)
         if !isSuccessfulSave {
