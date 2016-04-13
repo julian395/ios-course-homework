@@ -24,7 +24,7 @@ class NotesTableViewController: UITableViewController {
         let sortedRecords = newNotes.sectionNotes.sort({ (firstRecord: Diary, secondRecord: Diary) -> Bool in
             return firstRecord.date.compare(secondRecord.date) == NSComparisonResult.OrderedDescending
         })
-        var sectionNotes = [[Diary](), [Diary](), [Diary](), [Diary]()]
+        var sectionNotes = [[Diary](), [Diary](), [Diary]()]
         for record in sortedRecords {
             if record.isToday() {
                 sectionNotes[0].append(record)

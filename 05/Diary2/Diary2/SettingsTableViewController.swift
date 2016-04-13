@@ -1,17 +1,22 @@
 //
-//  DetailTableViewController.swift
+//  SettingsTableViewController.swift
 //  Diary2
 //
-//  Created by Julian1 on 02.04.16.
+//  Created by Julian1 on 03.04.16.
 //  Copyright © 2016 juliankob.com. All rights reserved.
 //
 
 import UIKit
 
-class DetailTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController {
 
+    var datting = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Settings"
+        
+        datting = ["Change Date Formatt"]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +34,65 @@ class DetailTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return datting.count
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        //Call UIAlertAction**************************************************************
+        
+        var text = ""
+        if NotesTableViewController.dateType {
+            text = "Date and Time"
+        }
+        else
+        {
+            text = "Date"
+        }
+        let optionMenu = UIAlertController(title:nil, message: "Current formatt is  \(text)", preferredStyle: .ActionSheet)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
 
-        // Configure the cell...
+        let CallDateAndTime =
+            {
+                (action: UIAlertAction!) -> Void in
+                let alertMessage = UIAlertController(title: "Congratulation!", message: "Your current date formatt is DATE AND TIME!", preferredStyle: .Alert)
+                alertMessage.addAction(UIAlertAction(title:"OK", style: .Default, handler: nil))
+                self.presentViewController(alertMessage, animated:true, completion:nil)
+                NotesTableViewController.dateType = true
+        }
+        let CallDate =
+            {
+                (action: UIAlertAction!) -> Void in
+            let alertMessage = UIAlertController(title: "Congratulation!", message: "Your current date formatt is DATE!", preferredStyle: .Alert)
+            alertMessage.addAction(UIAlertAction(title:"OK", style: .Default, handler: nil))
+            self.presentViewController(alertMessage, animated:true, completion:nil)
+                NotesTableViewController.dateType = false
+            }
+        let callActionD = UIAlertAction(title: "Date", style: .Default, handler: CallDate)
+        let callActionDaT = UIAlertAction(title: "Date and Time", style: .Default, handler: CallDateAndTime)
+        optionMenu.addAction(cancelAction)
+        optionMenu.addAction(callActionD)
+        optionMenu.addAction(callActionDaT)
+        self.presentViewController(optionMenu, animated:true, completion: nil)
+        //end of UIAlertAction**********************************************************************************
+        tableView.reloadData()
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("CellSet", forIndexPath: indexPath)
+
+        cell.textLabel!.text = datting[indexPath.row]
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
