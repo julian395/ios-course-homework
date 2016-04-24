@@ -350,11 +350,68 @@
                         <segue destination="l0W-Ew-m0f" kind="relationship" relationship="viewControllers" id="lu9-yn-Hnv"/>
                         <segue destination="YhN-0u-MUy" kind="relationship" relationship="viewControllers" id="gSp-mr-mBE"/>
                         <segue destination="SGN-Uh-UVI" kind="relationship" relationship="viewControllers" id="Slf-qd-wAL"/>
+                        <segue destination="0ek-36-OlG" kind="relationship" relationship="viewControllers" id="ENP-RO-aa8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rce-gR-YQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1636.5" y="255.5"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="3K5-mw-P7C">
+            <objects>
+                <viewController id="PB0-Qs-dyR" customClass="EventViewController" customModule="Diary2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JL0-00-qHF"/>
+                        <viewControllerLayoutGuide type="bottom" id="86T-e9-1pQ"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wfa-jY-iV0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" id="Ha3-Lo-KJW">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="uJM-7X-oHD">
+                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j36-M8-uMF">
+                                    <rect key="frame" x="4" y="3" width="142" height="29"/>
+                                    <segments>
+                                        <segment title="Event"/>
+                                        <segment title="TimeLine"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="onViewModeChanged:" destination="PB0-Qs-dyR" eventType="valueChanged" id="acP-9h-adb"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                        </view>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olO-tb-v0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402.5" y="1763.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xTB-q2-nHg">
+            <objects>
+                <navigationController id="0ek-36-OlG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="New" selectedImage="Time-And-Date-Clock-icon" systemItem="recents" id="tZ4-FC-Ps5"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RA3-1H-9Aw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PB0-Qs-dyR" kind="relationship" relationship="rootViewController" id="6Zg-1E-Gat"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaR-Dc-NYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836.5" y="1763.5"/>
         </scene>
         <!--Diary-->
         <scene sceneID="hBh-fJ-NV9">
@@ -378,6 +435,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Time-And-Date-Clock-icon" width="256" height="256"/>
         <image name="calendar" width="24" height="25"/>
         <image name="cloudy_sm" width="25" height="25"/>
         <image name="home_sel" width="29" height="29"/>
